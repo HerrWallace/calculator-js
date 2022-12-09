@@ -1,4 +1,4 @@
 import './styles.css';
 
-const h = 'hello';
-console.log(h);
+const output = document.querySelector('.output');
+console.log(output.textContent);

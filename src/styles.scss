@@ -1,7 +1,74 @@
+// @use '_normalize.scss'; // just for local usage
 @import '~normalize.css';
 
-.box {
-  width: 100px;
+$border-radius: 5px;
+
+$purple-color-back-special: #e8c2ca;
+$purple-color-back-all: #d1b3c4;
+$purple-color-all: #ffe8d6;
+$purple-color-number: #b392ac;
+
+.app {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.calculator {
+  margin: 0 auto;
+  background: rgb(250, 245, 245);
+  width: 600px;
+  height: 425px;
+  border-radius: $border-radius;
+}
+
+.field {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
   height: 100px;
-  background: red;
+  box-sizing: border-box;
+  padding-right: 10px;
+  background: #735d78;
+  border-radius: $border-radius $border-radius 0 0;
+  .output {
+    color: $purple-color-all;
+    font-size: 64px;
+    font-weight: 700;
+  }
+}
+
+.columns {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  box-sizing: border-box;
+  background-color: $purple-color-back-all;
+  border: black 1px solid;
+  width: 100px;
+  height: 65px;
+  color: $purple-color-all;
+  display: flex;
+  font-size: 30px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.itemNumber {
+  background-color: $purple-color-number;
+}
+
+.itemSpecial {
+  background-color: $purple-color-back-special;
 }

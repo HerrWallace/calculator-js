@@ -1,6 +1,65 @@
 @import '~normalize.css';
-.box {
-  width: 100px;
+.app {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.calculator {
+  margin: 0 auto;
+  background: rgb(250, 245, 245);
+  width: 600px;
+  height: 425px;
+  border-radius: 5px;
+}
+
+.field {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
   height: 100px;
-  background: red;
+  box-sizing: border-box;
+  padding-right: 10px;
+  background: #735d78;
+  border-radius: 5px 5px 0 0;
+}
+.field .output {
+  color: #ffe8d6;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.columns {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  box-sizing: border-box;
+  background-color: #d1b3c4;
+  border: black 1px solid;
+  width: 100px;
+  height: 65px;
+  color: #ffe8d6;
+  display: flex;
+  font-size: 30px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.itemNumber {
+  background-color: #b392ac;
+}
+
+.itemSpecial {
+  background-color: #e8c2ca;
 }/*# sourceMappingURL=styles.css.map */
