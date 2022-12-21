@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
     <title>Calculator</title>
   </head>
 
@@ -12,36 +12,43 @@
     <main class="app">
       <div class="calculator">
         <div class="field">
-          <div class="output">5</div>
+          <div class="output">
+            <div class="left"></div>
+            <div class="sign"></div>
+            <div class="right"></div>
+          </div>
+          <div class="deleteButton">
+            <div class="ac">AC</div>
+          </div>
         </div>
 
         <div class="columns">
           <div class="column">
-            <div class="item">%</div>
-            <div class="item">x&sup2;</div>
-            <div class="item">x<sup>y</sup></div>
-            <div class="item">x&sup3;</div>
-            <div class="item">x!</div>
+            <div class="item percent">%</div>
+            <div class="item square">x&sup2;</div>
+            <div class="item cube">x&sup3;</div>
+            <div class="item powerOfY">x<sup>y</sup></div>
+            <div class="item factorial">x!</div>
           </div>
 
           <div class="column">
-            <div class="item">mc</div>
-            <div class="item">&sup2;&radic;</div>
-            <div class="item">&sup3;&radic;</div>
-            <div class="item"><sup>y</sup>&radic;</div>
-            <div class="item"><sup>1</sup>/<sub>x</sub></div>
+            <div class="item mc">mc</div>
+            <div class="item squareRoot">&sup2;&radic;</div>
+            <div class="item cubeRoot">&sup3;&radic;</div>
+            <div class="item yRoot"><sup>y</sup>&radic;</div>
+            <div class="item oneDivideX"><sup>1</sup>/<sub>x</sub></div>
           </div>
 
           <div class="column">
-            <div class="item">m+</div>
+            <div class="item mPlus">m+</div>
             <div class="item itemNumber">7</div>
             <div class="item itemNumber">4</div>
             <div class="item itemNumber">1</div>
-            <div class="item">&plusmn;</div>
+            <div class="item plusMinus">&plusmn;</div>
           </div>
 
           <div class="column">
-            <div class="item">m-</div>
+            <div class="item mMinus">m-</div>
             <div class="item itemNumber">8</div>
             <div class="item itemNumber">5</div>
             <div class="item itemNumber">2</div>
@@ -49,24 +56,24 @@
           </div>
 
           <div class="column">
-            <div class="item">mr</div>
+            <div class="item mr">mr</div>
             <div class="item itemNumber">9</div>
             <div class="item itemNumber">6</div>
             <div class="item itemNumber">3</div>
-            <div class="item">,</div>
+            <div class="item comma">.</div>
           </div>
 
           <div class="column">
-            <div class="item itemSpecial">&divide;</div>
-            <div class="item itemSpecial">&times;</div>
-            <div class="item itemSpecial">&boxh;</div>
-            <div class="item itemSpecial">+</div>
-            <div class="item itemSpecial">=</div>
+            <div class="item itemOperation">&divide;</div>
+            <div class="item itemOperation">&times;</div>
+            <div class="item itemOperation">-</div>
+            <div class="item itemOperation">+</div>
+            <div class="item itemOperation">=</div>
           </div>
         </div>
         <!-- Columns  -->
       </div>
     </main>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
   </body>
 </html>

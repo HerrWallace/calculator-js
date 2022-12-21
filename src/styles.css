@@ -17,9 +17,10 @@
 
 .field {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 600px;
   height: 100px;
   box-sizing: border-box;
   padding-right: 10px;
@@ -27,9 +28,47 @@
   border-radius: 5px 5px 0 0;
 }
 .field .output {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  padding-right: 10px;
+  background: #735d78;
+  text-align: right;
   color: #ffe8d6;
-  font-size: 64px;
+  background-color: #735d78;
+  border: none;
+}
+.field .output .left,
+.field .output .sign,
+.field .output .right {
+  color: #ffe8d6;
+  font-size: 54px;
   font-weight: 700;
+  height: 100%;
+}
+
+.deleteButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: auto;
+  width: 100%;
+}
+.deleteButton .ac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 25px;
+  color: #ffe8d6;
+  background-color: #e8c2ca;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 10px;
 }
 
 .columns {
@@ -60,6 +99,6 @@
   background-color: #b392ac;
 }
 
-.itemSpecial {
+.itemOperation {
   background-color: #e8c2ca;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,3 @@
-// @use '_normalize.scss'; // just for local usage
 @import '~normalize.css';
 
 $border-radius: 5px;
@@ -26,18 +25,61 @@ $purple-color-number: #b392ac;
 
 .field {
   display: flex;
-  justify-content: flex-end;
+  // justify-content: flex-end;
+  flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 600px;
   height: 100px;
   box-sizing: border-box;
   padding-right: 10px;
   background: #735d78;
   border-radius: $border-radius $border-radius 0 0;
+
   .output {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding-right: 10px;
+    background: #735d78;
+    text-align: right;
     color: $purple-color-all;
-    font-size: 64px;
-    font-weight: 700;
+    background-color: #735d78;
+    border: none;
+
+    .left,
+    .sign,
+    .right {
+      color: $purple-color-all;
+      font-size: 54px;
+      font-weight: 700;
+      height: 100%;
+    }
+  }
+}
+
+.deleteButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: auto;
+  width: 100%;
+
+  .ac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    color: $purple-color-all;
+    background-color: $purple-color-back-special;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 10px;
   }
 }
 
@@ -69,6 +111,6 @@ $purple-color-number: #b392ac;
   background-color: $purple-color-number;
 }
 
-.itemSpecial {
+.itemOperation {
   background-color: $purple-color-back-special;
 }
