@@ -1,14 +1,4 @@
-export class Command {
-  constructor(subject) {
-    this.subject = subject;
-  }
-
-  execute(command) {
-    return this.subject[command]();
-  }
-}
-
-export class Calculator {
+class Calculator {
   constructor(leftNum = false, rightNum = false) {
     this.leftNum = leftNum;
     this.rightNum = rightNum;
@@ -78,3 +68,5 @@ export class Calculator {
     return 0 - this.leftNum;
   }
 }
+
+export default Calculator;

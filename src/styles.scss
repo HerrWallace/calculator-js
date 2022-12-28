@@ -109,8 +109,16 @@ $purple-color-number: #b392ac;
 
 .itemNumber {
   background-color: $purple-color-number;
+  
 }
 
-.itemOperation {
-  background-color: $purple-color-back-special;
+.comma {
+  background-color: $purple-color-back-all;
 }
+
+.pink {
+  .itemOperation {
+    background-color: $purple-color-back-special;
+  }  
+}
+

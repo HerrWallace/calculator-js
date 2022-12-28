@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
-import { Command, Calculator } from './command';
+import Command from '../classes/command';
+import Calculator from '../classes/calculator';
 
 const solve = (operator, operandLeft, operandRight) => {
   const command = new Command(new Calculator(+operandLeft, +operandRight));
